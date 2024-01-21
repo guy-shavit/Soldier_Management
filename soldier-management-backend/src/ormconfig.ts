@@ -8,7 +8,7 @@ const config: TypeOrmModuleOptions = {
   password: 'root',
   database: 'soldier_management_db',
   entities: ['dist/**/*.entity{.ts,.js}'],
-  // synchronize: true,
+  synchronize: true,
 };
 
 export = config;

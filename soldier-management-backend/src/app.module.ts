@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { SoldiersController } from './soldiers/soldiers.controller';  // adjust the path based on your project structure
+import { SoldiersService } from './soldiers/soldiers.service';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [SoldiersController],
+  providers: [SoldiersService],
 })
 export class AppModule {}

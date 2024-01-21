@@ -1,7 +1,8 @@
 
 import { Injectable } from '@nestjs/common';
-import { CreateSoldierDto } from './dto/create-soldier.dto/create-soldier.dto';
-import { UpdateSoldierDto } from './dto/update-soldier.dto/update-soldier.dto'; 
+import { CreateSoldierDto } from './dto/create-soldier.dto';
+import { UpdateSoldierDto } from './dto/update-soldier.dto';
+
 @Injectable()
 export class SoldiersService {
   private soldiers = [];
